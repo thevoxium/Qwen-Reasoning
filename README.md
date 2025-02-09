@@ -8,17 +8,15 @@ This project trains the Qwen2.5-7B-Instruct model to REASON. The model is traine
 - Coherent step-by-step explanations
 
 ## Sample Output
-
-**Prompt**: How many r's in the word strawberry?
-**Response**:
+```
+Prompt: How many r's in the word strawberry?
+Response:
 <reasoning>
 I am thinking about how to solve this problem. The question is asking for the number of 'r' characters in the word "strawberry". We need to iterate through the string and count the 'r's. Let's consider the string and count the characters.
 </reasoning>
 <answer>
-```cpp
 #include <iostream>
 #include <string>
-
 int main() {
     std::string word = "strawberry";
     int count = 0;
@@ -28,9 +26,8 @@ int main() {
     std::cout << "Number of 'r's in 'strawberry': " << count << std::endl;
     return 0;
 }
-```
 </answer>
-
+```
 
 ## Key Points
 - **Format-Driven Responses**: Generates responses in a strict XML format:
